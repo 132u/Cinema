@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="CinemaDBEntities-Web.config Connection String" description="CinemaDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/CinemaModel.csdl|res://*/CinemaModel.ssdl|res://*/CinemaModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=cinemadbsrv.database.windows.net;initial catalog=CinemaDB;user id=testuser;password=Nfy.if1960434161tat;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\cloudShoolFirst\\source\\repos\\WebAPI\\WebService2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CinemaDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

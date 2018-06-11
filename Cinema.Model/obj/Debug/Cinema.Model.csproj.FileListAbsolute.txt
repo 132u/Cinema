@@ -1,0 +1,11 @@
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\Cinema.Model.dll.config
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\Cinema.Model.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\Cinema.Model.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\EntityFramework.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\EntityFramework.xml
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Debug\Cinema.Model.csproj.CoreCompileInputs.cache
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Debug\Cinema.Model.csproj.CopyComplete
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Debug\Cinema.Model.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Debug\Cinema.Model.pdb

@@ -1,0 +1,6 @@
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.csproj.CoreCompileInputs.cache
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\ServiceUsage.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\ServiceUsage.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.csprojAssemblyReference.cache
