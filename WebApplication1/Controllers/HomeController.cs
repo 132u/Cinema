@@ -20,12 +20,5 @@ namespace WebApplication1.Controllers
             var r = response.Content.ReadAsStringAsync().Result;
             return View(await response.Content.ReadAsStringAsync());
         }
-
-        //public ActionResult Index()
-        //{
-        //    ViewBag.Title = "Home Page";
-
-        //    return View();
-        //}
     }
 }

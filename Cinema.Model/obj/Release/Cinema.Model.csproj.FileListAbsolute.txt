@@ -9,3 +9,4 @@ C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Release\Cinema.Mod
 C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Release\Cinema.Model.csproj.CopyComplete
 C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Release\Cinema.Model.dll
 C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Release\Cinema.Model.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\Cinema.Model\obj\Release\Cinema.Model.csprojAssemblyReference.cache
