@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web;
+﻿using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using ServiceUsage;
 
 namespace WebApplication1.Controllers
@@ -16,9 +9,11 @@ namespace WebApplication1.Controllers
     {
         private static WebApiServiceUsage _service = new WebApiServiceUsage(WebConfigurationManager.AppSettings["WebApiService"]);
 
-        public async void Index()
+        public async Task<ActionResult> Index()
         {
-           var d=await  _service.getCinemaInfo();
+            var actors = await _service.GetActors();
+            return View(actors);
+            
         }
 
         //public async Task<ActionResult> Index()

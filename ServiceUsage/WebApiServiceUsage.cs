@@ -20,15 +20,20 @@ namespace ServiceUsage
                 BaseAddress = new Uri(url)
             };
             _client.DefaultRequestHeaders.Accept.Clear();
-                 _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+               //  _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<ICollection<Movy>> getCinemaInfo()
+        public async Task<ICollection<Actor>> GetActors()
         {
-            var r = await _client.GetStringAsync("api/cinema");
-            var deserializedProduct = JsonConvert.DeserializeObject<ICollection<Movy>>(r);
-            return deserializedProduct;
-        }
+            var response = await _client.GetAsync("api/cinema");
+            string responseString = null;
+            if (response.IsSuccessStatusCode)
+            {
+                 responseString = response.Content.ReadAsStringAsync().Result;
+            }
+            return JsonConvert.DeserializeObject<ICollection<Actor>>(responseString);
+          
+         }
     }
 }
 
@@ -54,3 +59,4 @@ namespace ServiceUsage
         //    //}
         //    //return m;
         //}
+        

@@ -11,11 +11,11 @@ namespace WebApplication3.Controllers
     public class CinemaController : ApiController
     {
         // GET api/<controller>
-        public IList<Movy> Get()
+        public IList<Actor> Get()
         {
             using (var db = new CinemaDBEntities())
             {
-                return db.Movies.ToList();
+                return db.Actors.ToList();
                
             }
 
