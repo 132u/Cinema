@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,14 +9,16 @@ using Cinema.Model;
 namespace WebApplication2.Controllers
 {
     public class CinemaController : ApiController
-    { 
+    {
         // GET api/<controller>
-        public IEnumerable<Movy> Get()
+        public IList<Movy> Get()
         {
             using (var db = new CinemaDBEntities())
             {
                 return db.Movies.ToList();
+               
             }
+
         }
 
         // GET api/<controller>/5
@@ -24,8 +26,10 @@ namespace WebApplication2.Controllers
         {
             using (var db = new CinemaDBEntities())
             {
+
                 return db.Movies.FirstOrDefault(m => m.Id == id);
             }
+
         }
 
         // POST api/<controller>

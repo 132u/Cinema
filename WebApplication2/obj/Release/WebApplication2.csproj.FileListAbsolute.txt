@@ -104,3 +104,8 @@ C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\obj\Release\WebAppl
 C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\obj\Release\WebApplication2.csproj.CopyComplete
 C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\obj\Release\WebApplication2.dll
 C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\obj\Release\WebApplication2.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\bin\WebApplication1.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\bin\ServiceUsage.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\bin\WebApplication1.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\bin\WebApplication1.dll.config
+C:\Users\cloudShoolFirst\source\repos\WebAPI\WebApplication2\bin\ServiceUsage.pdb

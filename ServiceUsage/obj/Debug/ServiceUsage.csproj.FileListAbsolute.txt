@@ -4,3 +4,11 @@ C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\ServiceUsage
 C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.dll
 C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.pdb
 C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.csprojAssemblyReference.cache
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\Cinema.Model.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\EntityFramework.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\Cinema.Model.pdb
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\Cinema.Model.dll.config
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\EntityFramework.xml
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\obj\Debug\ServiceUsage.csproj.CopyComplete
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cloudShoolFirst\source\repos\WebAPI\ServiceUsage\bin\Debug\Newtonsoft.Json.xml

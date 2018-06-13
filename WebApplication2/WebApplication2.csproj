@@ -291,6 +291,10 @@
       <Project>{A1E0E0D8-B887-42A6-B21C-4B94E79B25E2}</Project>
       <Name>Cinema.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
+      <Project>{74ADE97A-1F1F-47A5-8898-2DC6D4D414CC}</Project>
+      <Name>WebApplication1</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
