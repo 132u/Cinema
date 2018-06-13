@@ -1,0 +1,26 @@
+﻿@model Cinema.Model.Actor
+
+@{
+    /**/
+
+    ViewBag.Title = "Add new actor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add new actor</h2>
+@using (Html.BeginForm("AddActor", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.Name, "Actor name")
+    <br />
+    @Html.EditorFor(model => model.Name)
+    <br /><br />
+    @Html.LabelFor(model => model.Surname, "Actor Surname")
+    <br />
+    @Html.EditorFor(model => model.Surname)
+    <br /><br />
+    @Html.LabelFor(model => model.BirthPlace, "Actor BirthPlace")
+    <br />
+    @Html.EditorFor(model => model.BirthPlace)
+    <br /><br />
+    <input type="submit" value="Add actor" />
+}

@@ -14,10 +14,10 @@ namespace Cinema.Model
     
     public partial class Actor
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string BirthPlace { get; set; }
-        public System.DateTime Birthday { get; set; }
+        public System.DateTime? Birthday { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Web.Configuration;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Cinema.Model;
 using Newtonsoft.Json;
@@ -15,12 +16,12 @@ namespace ServiceUsage
 
         public WebApiServiceUsage(string url)
         {
-            _client = new HttpClient
-            {
-                BaseAddress = new Uri(url)
-            };
-            _client.DefaultRequestHeaders.Accept.Clear();
-               //  _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _client = new HttpClient {BaseAddress = new Uri(url)};
+            
+                _client.DefaultRequestHeaders.Accept.Clear();
+            
+            //  _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            
         }
 
         public async Task<ICollection<Actor>> GetActors()
@@ -34,6 +35,36 @@ namespace ServiceUsage
             return JsonConvert.DeserializeObject<ICollection<Actor>>(responseString);
           
          }
+
+        public async Task<Actor> GetActor(int id)
+        {
+            var response = await _client.GetAsync($"api/cinema/{id}");
+            string responseString = null;
+            if (response.IsSuccessStatusCode)
+            {
+                responseString = response.Content.ReadAsStringAsync().Result;
+            }
+            return JsonConvert.DeserializeObject<Actor>(responseString);
+        }
+
+        //public async Task AddActor(Actor actor)
+        //{
+        //    var json = JsonConvert.SerializeObject(actor);
+        //    var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+        //     await _client.PostAsync("api/cinema", stringContent);
+        //}
+
+        public async Task EditActor(Actor actor)
+        {
+            var json = JsonConvert.SerializeObject(actor);
+            var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+            await _client.PostAsync("api/cinema", stringContent);
+        }
+
+        public async Task<HttpResponseMessage> RemoveActor(int id)
+        {
+           return await _client.DeleteAsync($"api/cinema/{id}");
+        }
     }
 }
 

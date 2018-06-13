@@ -1,27 +1,35 @@
 ﻿@model System.Collections.Generic.ICollection<Cinema.Model.Actor>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Actors";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>title</h2>
+<style type="text/css">
+    .table th, .table td {
+        text-align: center;
+    }
+</style>
 <table>
     <thead>
-        <th>Id</th>
-        <th>Name<th>
-                <th>Surname<th>
-        <th>BirthPlace</th>
-        <th>Birthday</th>
+    <th>Name<th>
+    <th>Surname<th>
+    <th>BirthPlace</th>
+    <th>Birthday</th>
 
     </thead>
     @foreach (Cinema.Model.Actor actor in Model)
     {
         <tr>
-            <td>@actor.Id</td>
             <td>@actor.Name</td>
             <td>@actor.Surname</td>
             <td>@actor.BirthPlace</td>
             <td>@actor.Birthday</td>
-        </tr>
+            <td><a href="/Home/GetActor/@actor.Id">Edit</a></td>
+            <td><a href="/Home/RemoveActor/@actor.Id">Remove</a></td>
+         </tr>
     }
 </table>
+
+<a href="/Home/AddActor">Add Actor</a>

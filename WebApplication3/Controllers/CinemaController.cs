@@ -22,22 +22,22 @@ namespace WebApplication3.Controllers
         }
 
         // GET api/<controller>/5
-        public Movy GetMovy(int id)
+        public Actor GetActor(int id)
         {
             using (var db = new CinemaDBEntities())
             {
 
-                return db.Movies.FirstOrDefault(m => m.Id == id);
+                return db.Actors.FirstOrDefault(m => m.Id == id);
             }
 
         }
 
         // POST api/<controller>
-        public void PostMovie(Movy movie)
+        public void PostActor(Actor actor)
         {
             using (var db = new CinemaDBEntities())
             {
-                db.Movies.Add(movie);
+                db.Actors.Add(actor);
                 db.SaveChanges();
             }
         }
@@ -45,6 +45,12 @@ namespace WebApplication3.Controllers
         // PUT api/<controller>/5
         public void Put(int id, [FromBody]string value)
         {
+            using (var db = new CinemaDBEntities())
+            {
+                //var a =db.Actors.FirstOrDefault(value);
+                //db.Actors.
+                //db.SaveChanges();
+            }
         }
 
         // DELETE api/<controller>/5
@@ -52,9 +58,12 @@ namespace WebApplication3.Controllers
         {
             using (var db = new CinemaDBEntities())
             {
-                var film = db.Movies.FirstOrDefault(m => m.Id == id);
-                db.Movies.Remove(film);
-                db.SaveChanges();
+                var film = db.Actors.Single(m => m.Id == id);
+                if (film != null)
+                {
+                    db.Actors.Remove(film);
+                    db.SaveChanges();
+                }
             }
         }
     }

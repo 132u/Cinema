@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
+using Cinema.Model;
 using ServiceUsage;
 
 namespace WebApplication1.Controllers
@@ -16,15 +17,45 @@ namespace WebApplication1.Controllers
             
         }
 
-        //public async Task<ActionResult> Index()
-        //{
-            //var response = await _service.GetAsync("api/cinema");
-            //var wr = response.Content;
-            //var r = response.Content.ReadAsStringAsync().Result;
-            ////Read response content result into string variable
-            //string strJson = response.Content.ReadAsStringAsync().Result;
-            ////Deserialize the string to JSON object
-            //return View(await response.Content.ReadAsStringAsync());
-       // }
+        
+        public async Task<ActionResult> GetActor(int id)
+        {
+            var actor = await _service.GetActor(id);
+            return View(actor);
+
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> AddActor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> AddActor(Actor actor)
+        {
+            await _service.EditActor(actor);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<ActionResult> RemoveActor(int id)
+        {
+            await _service.RemoveActor(id);
+            
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> EditActor(int id)
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<ActionResult> EditActor(Actor actor)
+        {
+            await _service.EditActor(actor);
+            
+            return RedirectToAction("Index");
+        }
     }
 }

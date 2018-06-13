@@ -1,0 +1,39 @@
+﻿@model Cinema.Model.Actor
+
+@{
+                /**/
+
+                ViewBag.Title = "Actor";
+                Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Please edit actor information</h2>
+@using (Html.BeginForm("EditActor", "Home", FormMethod.Post))
+{
+<fieldset>
+    @Html.HiddenFor(m => m.Id)
+    <p>
+        @Html.LabelFor(m => m.Name, "Actor name")
+        <br />
+        @Html.EditorFor(m => m.Name)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Surname, "Actor surname")
+        <br />
+        @Html.EditorFor(m => m.Surname)
+
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Birthday, "Actor Birthday")
+        <br />
+        @Html.EditorFor(m => m.Birthday)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.BirthPlace, "Actor BirthPlace")
+        <br />
+        @Html.EditorFor(m => m.BirthPlace)
+    </p>
+    
+    <p><input type="submit" value="Save" /></p>
+</fieldset>
+}
